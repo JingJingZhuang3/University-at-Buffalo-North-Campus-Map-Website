@@ -1,0 +1,83 @@
+body {
+  background-color: #D2E2F8;
+  padding:0;
+  margin:0;
+}
+.header {
+  background-color: #176BE2;
+  padding: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.top {
+background-color: #173660;
+overflow: hidden;
+z-index: 1;
+}
+
+
+.top a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.top .icon {
+  display: none;
+
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  padding: 5px;
+  text-align: center;
+}
+td{
+  padding: 5px;
+  text-align: left;
+}
+table{
+      height:600px;
+      width:600px;
+}
+.box{
+  position:absolute;
+      display:block;
+  overflow-y:scroll;
+}
+button{
+  float:right;
+}
+.cell{
+  width:300px;
+}
+@media screen and (max-width: 600px) {
+  .top a:not(:first-child) {display: none;}
+  .top a.icon {
+    float: right;
+    display: block;
+  }
+  .top.responsive {position: relative;}
+    .top.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+.top.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+  table{
+    width:100%;
+  }
+}

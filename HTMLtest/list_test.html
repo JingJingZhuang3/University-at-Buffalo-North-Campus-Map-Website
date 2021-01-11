@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="../js/shortest.js"></script>
+    <script src="../js/algo.js"></script>
+    <script src="../js/outdoor.js"></script>
+    <script src="../js/tunnel.js"></script>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <select id="options" onchange="changeFunc();">
+      <option value="shortest">Shortest Route</option>
+      <option value="outdoor">Outdoor Route</option>
+      <option value="tunnel">Tunnel Route</option>
+    </select>
+  <div id="test"></div>
+  <div id="result"></div>
+
+  <script>
+  document.getElementById("options").selectedIndex = 1;
+
+  function changeFunc(){
+    var box = document.getElementById("options");
+    var value=box.options[box.selectedIndex].value;
+    if(value=="outdoor") setOutdoor();
+    if(value=="tunnel") setTunnel();
+    if(value=="shortest") setShortest();
+  }
+  function addTo(arr){
+    let ret=[];
+    if(typeof(arr[0])==='object'){
+      for(var i of arr){
+        ret.push(help(i));
+      }
+    }else{
+      return help(arr);
+    }
+    return ret;
+  }
+
+  function help(arr){
+    let ret=[];
+    let temp=arr[0];
+    for(var i=1; i<arr.length;i++){
+      let s=temp+" to "+arr[i];
+      ret.push(s);
+      temp=arr[i];
+    }
+    return ret;
+  }
+
+  let result = document.getElementById("result");
+  let array = BFS(outdoorDict,"OBrian Hall","Baldy Hall");
+//    result.innerHTML=addTo(BFS(outdoorDict,"Bookstore","Cooke Hall"));
+  result.innerHTML=array[0];
+  </script>
+  </body>
+</html>

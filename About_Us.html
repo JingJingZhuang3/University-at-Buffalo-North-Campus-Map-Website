@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us Page</title>
+    <style>
+        html{
+        background-image: url("pic/Sky.jpg");
+        width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position:relative;
+      }
+
+      .box{
+        position:absolute;
+        /* background-color: #FFE4E1; */
+        text-align: center;
+        width: 425px;
+        height:100%;
+		    transform: translate(-50%,-50%);
+		    top: 50%;
+        left:50%;
+      }
+
+      .About{
+        position: relative;
+        font-size: 70px;
+        color: #fff;
+        font-family: inherit;
+      }
+
+      .Story{
+        position:relative;
+        font-size:165%;
+        /* max-font-size:10px; */
+        color: #fff;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: justify;
+        /* -moz-text-align-last: left;
+        text-align-last: left; */
+      }
+
+      .returnToHome{
+        position: relative;
+        top:5%;
+      }
+      .returnToHome a{
+        font-size: 50px;
+        color: #FFE4E1;
+        text-decoration: none;
+        padding: 10px 10px;
+        font-family: sans-seri;
+        font-weight:bold;
+      }
+
+      @media screen and (max-width:625px) {
+
+        .Story{
+          position:relative;
+          font-size:10px;
+          /* max-font-size:10px; */
+          color: #fff;
+          font-family: monospace;
+          font-weight: bold;
+          text-align: justify;
+          /* -moz-text-align-last: left;
+          text-align-last: left; */
+        }
+
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="returnToHome">
+        <a href="https://www-student.cse.buffalo.edu/CSE442-542/2020-Spring/cse-442t/">
+        <ion-icon name="home"></ion-icon>
+      </a>
+      </div>
+
+      <div class="About">
+        <p>About Us</p>
+      </div>
+
+      <div class="Story">
+        <p>
+          Our team has been focusing on helping new students/staffs of
+          University at Buffalo to adapt to this environment better and
+          quicker. Each member in our team has experienced through the
+          difficult time when looking for a building or did not know the
+          existing of indoor passage when we just came to University at
+          at Buffalo. Which, by walking outdoor looking for a building
+          when snowing heavily, has tortured us a lot.
+        </p>
+      </div>
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>
