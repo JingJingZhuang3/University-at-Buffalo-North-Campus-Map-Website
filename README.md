@@ -1,6 +1,7 @@
 **UB North Campus Navigation:**
 -------------------------------
-We are trying to help those who are new to UB to utilize UB North Campus's tunnels to get around.
+Collaborated in a team of four. Use html, CSS, php, and JavaScript to create a website that can direct the shortest path between buildings in UB north campus. Route option includes shortest route, outdoor route, and tunnel route.
+Used Zenhub and Github to setup tasks and share codes.
 
 **Getting Started:**
 --------------------
