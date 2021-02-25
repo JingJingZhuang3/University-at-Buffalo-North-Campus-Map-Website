@@ -21,6 +21,6 @@ For the versions available, see the tags on this repository.
 Contributors to OpenStreetMap.  
 Contributors to LeafLet.
 
-**Group original repository link:**
+**Original Group Repository link:**
 ---------------------
 https://github.com/cse442-spring-2020-offering/cse442-semester-project-marshmallow-o-smash
